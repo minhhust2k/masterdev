@@ -1,0 +1,13 @@
+{
+  "namespace": "src.main.java.AvroByGeneratingClass",
+  "type" : "record",
+  "name" : "FootballClub",
+  "fields" : [
+    {"name" : "Name", "type" : "string"},
+    {"name" : "Manager", "type" : "string"},
+    {"name" : "Stadium", "type" : "string"},
+    {"name" : "Trophies", "type" : "int"},
+    {"name" : "Phone", "type" : "long"},
+    {"name" : "isChampion", "type" : "boolean"}
+    ]
+}

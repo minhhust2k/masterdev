@@ -1,0 +1,27 @@
+{
+  "namespace": "src.main.java.AvroByGeneratingClass",
+  "type" : "record",
+  "name" : "FootballClub",
+  "fields" : [
+    {"name" : "Name", "type" : "string"},
+    {"name" : "Manager", "type" : "string"},
+    {"name" : "Stadium", "type" : "string"},
+    {"name" : "Trophies", "type" : "int"},
+    {"name" : "Phone", "type" : "long"},
+    {"name" : "PlayerList", "type" : {
+      "namespace" : "src.main.java.AvroByGeneratingClass",
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "namespace" : "src.main.java.AvroByGeneratingClass",
+        "name" : "Player",
+        "fields" : [
+          {"name" : "Name", "type" : "string"},
+          {"name" : "Age", "type" : "int"},
+          {"name" : "Salary", "type" : "long"}
+        ]
+      }
+    }
+    }
+  ]
+}
