@@ -1,0 +1,11 @@
+{
+  "namespace": "",
+  "type": "record",
+  "name": "Customer",
+  "fields": [
+    {"name": "id",  "type":"int"},
+    {"name": "num_order",  "type":"int"},
+    {"name": "Age",  "type":"int"},
+    {"name": "Tel",  "type":"string"}
+  ]
+}
