@@ -1,6 +1,7 @@
 # TASK 1
 - Tạo 5 table như hình dưới (mặc dù không chỉ định Foreign Key nhưng em vẫn vẽ thêm một số liên kết để thể hiện mối quan hệ giữa các table)
-![image](https://user-images.githubusercontent.com/106506105/174639321-d870ebd1-af95-49c3-b29b-a2bf02dd3347.png)
+
+# ![image](https://user-images.githubusercontent.com/106506105/174639321-d870ebd1-af95-49c3-b29b-a2bf02dd3347.png)
 - Với table Student em gen ra 30000 records, với thuộc tính tên được random từ nguồn tên nam/nữ người Việt Nam (source : https://github.com/duyet/vietnamese-namedb)
 - Tương tự, table Teacher em cũng gen ra 1000 records
 - Table Subject em lọc ra 200 môn và số tín chỉ tương ứng từ file excel đăng ký môn học của ĐHBK HN (source : https://ctt.hust.edu.vn/DisplayWeb/DisplayKeHoach?kehoach=25142)
