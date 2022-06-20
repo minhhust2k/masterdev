@@ -1,9 +1,9 @@
 -- Create users table
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL,
-  `username` varchar(5) CHARACTER SET utf8mb4 NOT NULL,
+  `username` varchar(15) CHARACTER SET utf8mb4 NOT NULL,
   `fullname` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
-  `province` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
+  `province` varchar(3) CHARACTER SET utf8mb4 NOT NULL,
   `age` tinyint(3) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
