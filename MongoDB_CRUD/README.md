@@ -13,7 +13,7 @@
 + Update document : (PUT) localhost:8080/api/update-book/{id}
 + Delete document : (DELETE) localhost:8080/api/delete-book/{id}
 # Full Text Search By Book Name And Author
-+ Trả về list document không sort : localhost:8080/api/full-text-search/{text}
-+ Trả về list document sort theo score (set weight name = weight author = 1) : localhost:8080/api/full-text-search-sort-by-score/{text}
++ Trả về list document không sort : (GET) localhost:8080/api/full-text-search/{text}
++ Trả về list document sort theo score (set weight name = weight author = 1) : (GET) localhost:8080/api/full-text-search-sort-by-score/{text}
 # Search By Date Service
-+ Trả về list document có ngày xuất bản trong khoảng : localhost:8080/api/between-date/{date1}/{date2}
++ Trả về list document có ngày xuất bản trong khoảng : (GET) localhost:8080/api/between-date/{date1}/{date2}
