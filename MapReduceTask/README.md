@@ -1,11 +1,18 @@
 # Setup Hadoop Cluster
--- Server được sử dụng : 172.17.80.27/28/29/30/31
--- NameNode (Cài với HA) : Activate NameNode (27), Stanby NameNode (31), 5 JournalNode(27-31)
-++ 5 DataNode (27-31)
-- yarn.resourcemanager.hostname (27)
++ Server được sử dụng : 172.17.80.27/28/29/30/31
++ NameNode (Cài với HA) : Activate NameNode (27), Stanby NameNode (31), 5 JournalNode(27-31)
++ 5 DataNode (27-31)
++ yarn.resourcemanager.hostname (27)
 # MapReduce Task
--
++ Để thực hiện các job mapreduce, ssh vào hadoop@172.17.80.27 (password : 1) => cd minhpv64
 ## Word Count Task :
 + Em sử dụng regex để replace tất cả kí tự đặc biệt ở trong phase Mapper
-+ 
++ (home/hadoop/minhpv64) : yarn jar MapReduceTask-minhpv64.jar main.java.WordCount.WordCount minhpv64/poem.txt minhpv64/output
+## Distinct Count Task :
++ Cách 1 : Sử dụng func c
++ yarn jar MapReduceTask-minhpv64.jar main.java.CountDistinct1ReducerTask.CountDistinct minhpv64/count_distinct minhpv64/output
++ yarn jar MapReduceTask-minhpv64.jar main.java.CountDistinct2Jobs.CountDistinct minhpv64/count_distinct.csv minhpv64/outtemp minhpv64/output
++ yarn jar MapReduceTask-minhpv64.jar main.java.JoinReducePhaseText.JoinDriver minhpv64/salary.csv minhpv64/people.csv minhpv64/output
++ yarn jar MapReduceTask-minhpv64.jar main.java.JoinReducePhaseGenericWritable.JoinDriver minhpv64/salary.csv minhpv64/people.csv minhpv64/output
++ yarn jar MapReduceTask-minhpv64.jar main.java.JoinMapPhaseText.JoinDriver hdfs://ha-cluster/user/hadoop/minhpv64/salary.csv minhpv64/people.csv minhpv64/output
  
