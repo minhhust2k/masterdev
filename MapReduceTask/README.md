@@ -5,6 +5,7 @@
 + yarn.resourcemanager.hostname (27)
 # MapReduce Task
 + Để thực hiện các job mapreduce, ssh vào hadoop@172.17.80.27 (password : 1) => cd minhpv64
++ Trong các folder có tên out... trong repo này là các output job của em
 ## Word Count Task :
 + Em sử dụng regex để replace tất cả kí tự đặc biệt ở trong phase Mapper
 + (home/hadoop/minhpv64) : yarn jar MapReduceTask-minhpv64.jar main.java.WordCount.WordCount minhpv64/poem.txt minhpv64/output
